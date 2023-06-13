@@ -55,7 +55,7 @@ Enables your wireless interface.
 airmon-ng check kill
 ```
 All conflicting processes are killed.
-``html
+```html
 sudo airmon-ng start wlan0
 ```
 After running this command your mode of operation will be switched from managed to monitor enabling your wireless interface for capturing all frames in the air that are not directed for the interface. 
