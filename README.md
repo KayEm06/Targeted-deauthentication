@@ -6,7 +6,15 @@ Targeted packet sniffing with `airodump-ng` allows an adversary to deauthenticat
 
 ## Stage 1 - Installing the aircrack-ng suite
 
+Install the dependencies for your operating system from https://github.com/aircrack-ng/aircrack-ng
+
+To install for Ubuntu and Debian distros
+
 ```html
-∼$ sudo apt update
-∼$ sudo apt install aircrack-ng
+sudo apt-get update
+sudo apt-get install -y aircrack-ng
 ```
+
+To install for Red-hat distributions
+
+```html
