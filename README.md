@@ -8,6 +8,7 @@ Targeted packet sniffing with `airodump-ng` enables an adversary to monitor netw
 
 <details>
 <summary>Extra information - 4 way handshake </summary>
+<br>
 <ul><li>The first frame is an ANonce (Acknowledgement nunmber once) sent by the access point.</li>
 <li>The second frame is an SNonce (Supplicant number once) which is protected by the Message Integrity Check (MIC) sent by the client. Once received by the access point, the access point generates a Pairwise Transient Key (PTK).</li>
 <li>The third frame is a Robust Security Network (RSN) sent by the access point that includes information on the cipher suite, group cipher, and authentication method used.</li>
