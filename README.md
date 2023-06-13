@@ -21,10 +21,14 @@ ALFA AWUS036 NHA
 - Chipset: Atheros AR9271
 - Frequency: 2.4GHz
 
+***
+
 ### Tools used:
  - aircrack-ng
  - airodump-ng
  - airmon-ng
+
+***
 
 ## Stage 1 - Installing the aircrack-ng suite
 
