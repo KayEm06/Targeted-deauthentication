@@ -62,11 +62,18 @@ Enables your wireless interface.
 
 ### Method 2 - Using airmon-ng
 
-```html
+```
 airmon-ng check kill
 ```
-All conflicting processes are killed.
+All processes or services that control wireless interfaces will be killed to prevent interference.
 ```html
 sudo airmon-ng start wlan0
 ```
-After running this command your mode of operation will be switched from managed to monitor enabling your wireless interface for capturing all frames in the air that are not directed for the interface. 
+After running this command your mode of operation will be switched from managed to monitor enabling your wireless interface for capturing all frames in the air that are not directed for the interface.
+
+## Stage 3 - Scanning for nearby networks
+
+Beacons are periodically sent by access points to inform devices of their presence, to capture these beacon frames along with other information of nearby networks we use `airodump-ng`
+
+```html
+
