@@ -81,20 +81,20 @@ airodump-ng wlan0mon
 All nearby networks that operate on the 2.4GHz frequency range will be displayed on the terminal with additional information that may help an adversary identify a network with outdated encryption protocols or with a channel that is not congested.
 
 ```
- CH  2 ][ Elapsed: 6 s ][ 2023-06-13 21:42                                                                      
+CH  2 ][ Elapsed: 6 s ][ 2023-06-13 21:42                                                                      
                                                                                                                 
- BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                
+BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                
                                                                                                                 
- **:**:**:**:**:**  -83        9        1    0   6  130   WPA2 CCMP   PSK  NOW6*****                            
- **:**:**:**:**:**  -50       17        0    0   6  360   WPA2 CCMP   PSK  Redmi*****                           
- 28-C0-1B-20-05-6B  -35       10        0    0   1  130   WPA2 CCMP   PSK  EXT2-SKYFA72B                        
- **:**:**:**:**:**  -54        8        0    0   1  195   WPA2 CCMP   PSK  TALKTALK7*****                       
- **:**:**:**:**:**  -76        5        1    0   1  130   WPA2 CCMP   PSK  SKY*****                             
- **:**:**:**:**:**  -48        4       34    0   1  130   WPA2 CCMP   PSK  SKY*****                             
- **:**:**:**:**:**  -58        8        0    0   9  195   WPA2 CCMP   PSK  TALKTALK6*****                       
- **:**:**:**:**:**  -70        4        0    0  11  130   OPN              LG_Speaker_Setup*****                
- **:**:**:**:**:**  -58        4        0    0  11  195   WPA2 CCMP   PSK  TALKTALK7*****                       
- ```
+**:**:**:**:**:**  -83        9        1    0   6  130   WPA2 CCMP   PSK  NOW6*****                            
+**:**:**:**:**:**  -50       17        0    0   6  360   WPA2 CCMP   PSK  Redmi*****                           
+28:C0:1B:20:05:6B  -35       10        0    0   1  130   WPA2 CCMP   PSK  EXT2-SKYFA72B                        
+**:**:**:**:**:**  -54        8        0    0   1  195   WPA2 CCMP   PSK  TALKTALK7*****                       
+**:**:**:**:**:**  -76        5        1    0   1  130   WPA2 CCMP   PSK  SKY*****                             
+**:**:**:**:**:**  -48        4       34    0   1  130   WPA2 CCMP   PSK  SKY*****                             
+**:**:**:**:**:**  -58        8        0    0   9  195   WPA2 CCMP   PSK  TALKTALK6*****                       
+**:**:**:**:**:**  -70        4        0    0  11  130   OPN              LG_Speaker_Setup*****                
+**:**:**:**:**:**  -58        4        0    0  11  195   WPA2 CCMP   PSK  TALKTALK7*****                       
+```
 - **BSSID**:   Basic Service Set Identifier, MAC address of the access point.
 - **PWR**:     Power, signal strength of the access point.
 - **Beacons**: The number of broadcast frames sent by the access point.
@@ -107,3 +107,16 @@ All nearby networks that operate on the 2.4GHz frequency range will be displayed
 - **AUTH**:    The authentication method used by the access point.
 - **ESSID**:   Extended Service Set Identifier, name of the access point.
 
+## Stage 2 - Discovering clients
+
+```
+CH  1 ][ Elapsed: 12 s ][ 2023-06-13 22:08                                                                     
+                                                                                                               
+BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                            
+                                                                                                               
+28:C0:1B:20:05:6B  -30 100      112       36   17   1  130   WPA2 CCMP   PSK  EXT2-SKYFA72B                    
+                                                                                                               
+BSSID              STATION            PWR   Rate    Lost    Frames  Notes  Probes                              
+                                                                                                               
+28:C0:1B:20:05:6B DC:80:84:67:84:4A  -36    6e-24      0      162                                              
+```
