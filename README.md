@@ -81,19 +81,19 @@ airodump-ng wlan0mon
 All nearby networks that operate on the 2.4GHz frequency range will be displayed on the terminal with additional information that may help an adversary identify a network with outdated encryption protocols or with a channel that is not congested.
 
 ```
- CH  2 ][ Elapsed: 6 s ][ 2023-06-13 21:42                                                                               
-                                                                                                                         
- BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                         
-                                                                                                                                                  
- **:**:**:**:**:**  -83        9        1    0   6  130   WPA2 CCMP   PSK  NOW6*****                                                                   
- **:**:**:**:**:**  -50       17        0    0   6  360   WPA2 CCMP   PSK  Redmi*****                                    
- 18:C5:01:BD:EA:0A  -35       10        0    0   1  130   WPA2 CCMP   PSK  EXT2-SKYFA72B                                 
- **:**:**:**:**:**  -54        8        0    0   1  195   WPA2 CCMP   PSK  TALKTALK7*****                                
- **:**:**:**:**:**  -76        5        1    0   1  130   WPA2 CCMP   PSK  SKY*****                                      
- **:**:**:**:**:**  -48        4       34    0   1  130   WPA2 CCMP   PSK  SKY*****                                      
- **:**:**:**:**:**  -58        8        0    0   9  195   WPA2 CCMP   PSK  TALKTALK6*****                                
- **:**:**:**:**:**  -70        4        0    0  11  130   OPN              LG_Speaker_Setup*****                         
- **:**:**:**:**:**  -58        4        0    0  11  195   WPA2 CCMP   PSK  TALKTALK7*****
+ CH  2 ][ Elapsed: 6 s ][ 2023-06-13 21:42                                                                      
+                                                                                                                
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                
+                                                                                                                
+ **:**:**:**:**:**  -83        9        1    0   6  130   WPA2 CCMP   PSK  NOW6*****                            
+ **:**:**:**:**:**  -50       17        0    0   6  360   WPA2 CCMP   PSK  Redmi*****                           
+ 28-C0-1B-20-05-6B  -35       10        0    0   1  130   WPA2 CCMP   PSK  EXT2-SKYFA72B                        
+ **:**:**:**:**:**  -54        8        0    0   1  195   WPA2 CCMP   PSK  TALKTALK7*****                       
+ **:**:**:**:**:**  -76        5        1    0   1  130   WPA2 CCMP   PSK  SKY*****                             
+ **:**:**:**:**:**  -48        4       34    0   1  130   WPA2 CCMP   PSK  SKY*****                             
+ **:**:**:**:**:**  -58        8        0    0   9  195   WPA2 CCMP   PSK  TALKTALK6*****                       
+ **:**:**:**:**:**  -70        4        0    0  11  130   OPN              LG_Speaker_Setup*****                
+ **:**:**:**:**:**  -58        4        0    0  11  195   WPA2 CCMP   PSK  TALKTALK7*****                       
  ```
 
 
