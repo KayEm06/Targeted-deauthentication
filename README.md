@@ -35,3 +35,27 @@ sudo dnf install -y aircrack-ng
 
 ## Stage 2 - Enabling monitor mode on your wireless adapter
 
+### Method 1 - Manually switching mode of operation.
+```html
+ifconfig wlan0 down
+```
+Disables your wireless interface.
+```html
+iwconfig wlan0 mode monitor
+```
+Sets your wireless interface's mode of operation to monitor.
+```html
+ifconfig wlan0 up
+```
+Enables your wireless interface.
+
+### Method 2 - Using airmon-ng
+
+```html
+airmon-ng check kill
+```
+All conflicting processes are killed.
+``html
+sudo airmon-ng start wlan0
+```
+After running this command your mode of operation will be switched from managed to monitor enabling your wireless interface for capturing all frames in the air that are not directed for the interface. 
