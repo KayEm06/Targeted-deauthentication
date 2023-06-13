@@ -124,7 +124,7 @@ BSSID              STATION            PWR   Rate    Lost    Frames  Notes  Probe
                                                                                                                
 28:C0:1B:20:05:6B DC:80:84:67:84:4A  -36    6e-24      0      162                                              
 ```
-If you are planning on deauthenticating clients from a target access point, leave this terminal running in the background and open a new terminal.
+**If you are planning on deauthenticating clients from a target access point, leave this terminal running in the background and open a new terminal.**
 
 ## Stage 5 - Deauthenticating clients
 
