@@ -33,29 +33,29 @@ Install the dependencies for your operating system from https://github.com/aircr
 
 To install for Ubuntu and Debian distros
 
-```html
+```
 sudo apt-get update
 sudo apt-get install -y aircrack-ng
 ```
 
 To install for Red-hat distributions
 
-```html
+```
 sudo dnf install -y aircrack-ng
 ```
 
 ## Stage 2 - Enabling monitor mode on your wireless adapter
 
 ### Method 1 - Manually switching mode of operation.
-```html
+```
 ifconfig wlan0 down
 ```
 Disables your wireless interface.
-```html
+```
 iwconfig wlan0 mode monitor
 ```
 Sets your wireless interface's mode of operation to monitor.
-```html
+```
 ifconfig wlan0 up
 ```
 Enables your wireless interface.
@@ -66,7 +66,7 @@ Enables your wireless interface.
 airmon-ng check kill
 ```
 All processes or services that control wireless interfaces will be killed to prevent interference.
-```html
+```
 sudo airmon-ng start wlan0
 ```
 After running this command your mode of operation will be switched from managed to monitor enabling your wireless interface for capturing all frames in the air that are not directed for the interface.
@@ -75,5 +75,25 @@ After running this command your mode of operation will be switched from managed 
 
 Beacons are periodically sent by access points to inform devices of their presence, to capture these beacon frames along with other information of nearby networks we use `airodump-ng`
 
-```html
+```
+airodump-ng wlan0mon
+```
+All nearby networks that operate on the 2.4GHz frequency range will be displayed on the terminal with additional information that may help an adversary identify a network with outdated encryption protocols or with a channel that is not congested.
+
+```
+ CH  2 ][ Elapsed: 6 s ][ 2023-06-13 21:42                                                                               
+                                                                                                                         
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                         
+                                                                                                                                                  
+ **:**:**:**:**:**  -83        9        1    0   6  130   WPA2 CCMP   PSK  NOW6*****                                                                   
+ **:**:**:**:**:**  -50       17        0    0   6  360   WPA2 CCMP   PSK  Redmi*****                                    
+ 18:C5:01:BD:EA:0A  -35       10        0    0   1  130   WPA2 CCMP   PSK  EXT2-SKYFA72B                                 
+ **:**:**:**:**:**  -54        8        0    0   1  195   WPA2 CCMP   PSK  TALKTALK7*****                                
+ **:**:**:**:**:**  -76        5        1    0   1  130   WPA2 CCMP   PSK  SKY*****                                      
+ **:**:**:**:**:**  -48        4       34    0   1  130   WPA2 CCMP   PSK  SKY*****                                      
+ **:**:**:**:**:**  -58        8        0    0   9  195   WPA2 CCMP   PSK  TALKTALK6*****                                
+ **:**:**:**:**:**  -70        4        0    0  11  130   OPN              LG_Speaker_Setup*****                         
+ **:**:**:**:**:**  -58        4        0    0  11  195   WPA2 CCMP   PSK  TALKTALK7*****
+ ```
+
 
