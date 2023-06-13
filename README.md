@@ -108,12 +108,10 @@ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID
 - **ESSID**:   Extended Service Set Identifier, name of the access point.
 
 ## Stage 4 - Discovering clients
-
-Network clients should be scanned with the command below to produce a map of all clients connected to the network. The MAC address of connected clients is useful information in post connection attacks by spoofing your MAC address and redirecting network traffic to your machine.
-
 ```
 sudo airmon-ng --bssid 28:C0:1B:20:05:6B -c 1 wlan0mon
 ```
+Scanning clients associated with an access point produces a map of all clients connected to the network, this is useful as the MAC address of connected clients can be used in post connection attacks by spoofing your MAC address and redirecting network traffic to your machine.
 
 ```
 CH  1 ][ Elapsed: 12 s ][ 2023-06-13 22:08                                                                     
