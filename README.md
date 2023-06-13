@@ -6,8 +6,9 @@
 
 Targeted packet sniffing with `airodump-ng` enables an adversary to monitor network traffic, discovering available clients through sending probes and beacons. Deauthentication frames can then be injected using `aireplay-ng` to force the client to re-connect to the network, capturing the WPA2 handshake in the process. Using `aircrack-ng`, the EAPoL key frames captured in the four-way handshake can derive the PSK (Pre-shared key) with a dictionary attack which can be used to connect to the network, this opens a variety of attacks that can be performed such as ARP poisoining, bypassing HTTPS, bypassing HSTS, DNS spoofing, and injecting Javascript code.
 
+### Extra information - 4 way handshake
 <details>
-<summary>Extra information - 4 way handshake </summary>
+<summary>**Extra information - 4 way handshake**</summary>
 <br>
 <ul><li>The first frame is an ANonce (Acknowledgement nunmber once) sent by the access point.</li>
 <li>The second frame is an SNonce (Supplicant number once) which is protected by the Message Integrity Check (MIC) sent by the client. Once received by the access point, the access point generates a Pairwise Transient Key (PTK).</li>
