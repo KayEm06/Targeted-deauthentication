@@ -95,5 +95,15 @@ All nearby networks that operate on the 2.4GHz frequency range will be displayed
  **:**:**:**:**:**  -70        4        0    0  11  130   OPN              LG_Speaker_Setup*****                
  **:**:**:**:**:**  -58        4        0    0  11  195   WPA2 CCMP   PSK  TALKTALK7*****                       
  ```
-
+- **BSSID**:   Basic Service Set Identifier, MAC address of the access point.
+- **PWR**:     Power, signal strength of the access point.
+- **Beacons**: The number of broadcast frames sent by the access point.
+- **#Data**:   The number of data frames captured by the interface.
+- **#/s**:     The number of data frames captured per second over 10 seconds.
+- **CH**:      The channel number the access point is operating on.
+- **MB**:      The maximum transmission speed supported by the access point.
+- **ENC**:     The encryption algorithm used by the access point, OPN networks do not use an encryption algorithm.
+- **CIPHER**:  The cipher used with the encryption algorithm.
+- **AUTH**:    The authentication method used by the access point.
+- **ESSID**:   Extended Service Set Identifier, name of the access point.
 
