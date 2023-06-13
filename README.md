@@ -4,7 +4,7 @@
 
 **NOTE:** For educational use to simulate wireless attacks to understand how they work and how to prevent them. Do **NOT** use for malicious intent.
 
-Targeted packet sniffing with `airodump-ng` allows an adversary to capture particular network traffic to discover available clients through sending probes and beacons and injecting deauthentication frames so the client attempts to reconnect, capturing the WPA2 handshake in the process. This WPA2 handshake can be decrypted using tools such as `aircrack-ng` to retrieve the PMK (Primary Master Key).
+Targeted packet sniffing with `airodump-ng` enables an adversary to monitor network traffic, discovering available clients through sending probes and beacons. Deauthentication frames can then be injected using `aireplay-ng` to force the client to re-connect to the network, capturing the WPA2 handshake in the process. Using `aircrack-ng` the EAPOL-key captured in the four-way handshake can derive the PSK (Pre-shared key) with a dictionary attack.
 
 ### Hardware used:
 ALFA AWUS036 NHA
