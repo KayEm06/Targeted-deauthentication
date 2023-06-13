@@ -18,3 +18,5 @@ sudo apt-get install -y aircrack-ng
 To install for Red-hat distributions
 
 ```html
+sudo dnf install -y aircrack-ng
+```
